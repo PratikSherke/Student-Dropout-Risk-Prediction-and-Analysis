@@ -1,17 +1,17 @@
 # Predicting and Analyzing Student Dropout Risks using Supervised ML Algorithms
-*An interactive machine learning dashboard to predict and analyze student dropout risk, developed as of August 02, 2025.*
+*An interactive machine learning dashboard to predict and analyze student dropout risk*
 
 ## 📝 Project Overview
 The **Student Dropout Risk Analysis Dashboard** is a comprehensive web application built with Streamlit, designed to predict student dropout risk using a variety of supervised machine learning classifiers. The project evaluates Logistic Regression, Decision Trees, Support Vector Machines (SVM), Random Forest, K-Nearest Neighbors (KNN), and XGBoost, with XGBoost selected for the dashboard due to its superior performance. It includes extensive exploratory data analysis (EDA), feature engineering with PCA, and SHAP-based explainability, enhanced by GridSearchCV for hyperparameter tuning, learning curves, ROC curves, and confusion matrices. The dashboard provides interactive visualizations to help educators identify at-risk students and understand key influencing factors.
 
 ### Key Features
-- **Multi-Model Prediction**: Compares Logistic Regression, Decision Trees, SVM, Random Forest, KNN, and XGBoost with actual test accuracies of 77%, 73%, 75%, 76%, 74%, and 78%, respectively.
+- **Multi-Model Prediction**: Compares Logistic Regression, Decision Trees, SVM, Random Forest, KNN, and XGBoost.
 - **Hyperparameter Tuning**: Uses GridSearchCV to optimize models like Random Forest and KNN.
 - **Feature Engineering**: Applies PCA to reduce dimensionality of curricular unit features, addressing multicollinearity.
 - **Explainability**: Employs SHAP for transparent predictions with bar, beeswarm, waterfall, and force plots.
 - **Interactive Dashboard**: Built with Streamlit, allowing users to select students and explore risk scores and feature impacts.
 - **Exploratory Data Analysis (EDA)**: Includes pie charts, histograms, bar plots, and correlation heatmaps.
-- **Performance Metrics**: Features learning curves, ROC curves (AUC 0.78 for XGBoost), and confusion matrices.
+- **Performance Metrics**: Features learning curves, ROC curves (AUC 0.87 for XGBoost), and confusion matrices.
 - **Risk Categorization**: Classifies students into Low (<0.3), Medium (0.3–0.7), and High (>0.7) risk.
 - **Customizable**: Adaptable to other datasets with similar features.
 
@@ -26,7 +26,7 @@ The **Student Dropout Risk Analysis Dashboard** is a comprehensive web applicati
 - **Environment**: Jupyter Notebook, Google Colab (optional)
 
 ## 📊 Dataset
-The project uses the "Student Dropout Dataset" (`student's dropout dataset.csv`), with 4,424 records and 35 features:
+The project uses the "Student Dropout Dataset" (`student's_dropout_dataset.csv`), with 4,424 records and 35 features:
 - **Demographic**: Marital status, gender, age at enrollment, nationality
 - **Academic**: Course, previous qualifications, curricular units (credited, enrolled, evaluations, approved, grades)
 - **Socio-economic**: Scholarship holder, debtor status, tuition fees status, economic indicators (unemployment rate, inflation rate, GDP)
@@ -96,7 +96,7 @@ student-dropout-prediction/
    - **Student Information**: View categorical features (e.g., Gender, Course).
    - **Risk Assessment**: Check risk score and category.
    - **SHAP Visualizations**: Analyze global (bar, beeswarm) and individual (waterfall, force) feature impacts.
-   - **Model Performance**: Review accuracy (78% for XGBoost), AUC (0.78), and confusion matrices.
+   - **Model Performance**: Review accuracy (84% for XGBoost), AUC (0.87), and confusion matrices.
 4. **Interpret Insights**: Use SHAP tables to identify key risk factors.
 
 ## 🧪 Methodology
