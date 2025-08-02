@@ -1,6 +1,4 @@
-# Student Dropout Risk Analysis Dashboard
-
-![Project Banner](https://via.placeholder.com/800x200.png?text=Student+Dropout+Risk+Analysis)  
+# Predicting and Analyzing Student Dropout Risks using Supervised ML Algorithms
 *An interactive machine learning dashboard to predict and analyze student dropout risk, developed as of August 02, 2025.*
 
 ## 📝 Project Overview
@@ -81,16 +79,14 @@ A mapped dataset (`mapped_student_dropout_dataset.csv`) provides readable catego
 ### Project Structure
 ```
 student-dropout-prediction/
-├── app.py                          # Main Streamlit application
-├── student's dropout dataset.csv    # Original dataset
-├── mapped_student_dropout_dataset.csv # Mapped dataset
-├── requirements.txt                # Dependencies
-├── README.md                       # Documentation
-├── dataset_description.md          # Dataset details
-├── notebooks/                      # Jupyter notebooks
-│   └── student's_dropout_prediction_projejct.ipynb
-└── assets/                         # Images, logos
-    └── banner.png
+├── app.py                                     # Main Streamlit application
+├── student's_dropout_dataset.csv                 # Original dataset
+├── mapped_student_dropout_dataset.csv            # Mapped dataset
+├── requirements.txt                              # Dependencies
+├── README.md                                     # Documentation
+├── dataset_description.md                        # Dataset details
+├── student's_dropout_prediction_projejct.ipynb   #Jupyter notebooks
+
 ```
 
 ## 📈 Usage
@@ -120,8 +116,8 @@ student-dropout-prediction/
    - Generated learning curves to select optimal hyperparameters.
    - Selected XGBoost for the dashboard (78% accuracy).
 4. **Evaluation**:
-   - Calculated accuracies: Logistic Regression (77%), Decision Trees (73%), SVM (75%), Random Forest (76%), KNN (74%), XGBoost (78%).
-   - Plotted ROC curves (AUC 0.78 for XGBoost) and confusion matrices for all models.
+   - Calculated accuracies: Logistic Regression (81%), Decision Trees (83.2%), SVM (80.9%), Random Forest (82.8%), KNN (79.5%), XGBoost (84%).
+   - Plotted ROC curves (AUC 0.87 for XGBoost) and confusion matrices for all models.
 5. **Explainability**:
    - Used SHAP for global and individual feature importance.
    - Visualized with bar, beeswarm, waterfall, and force plots.
@@ -132,8 +128,8 @@ student-dropout-prediction/
 ## 📊 Results
 - **Model Performance**:
   - **Baseline Accuracy**: ~68% (majority class).
-  - **Actual Accuracies**: Logistic Regression (77%), Decision Trees (73%), SVM (75%), Random Forest (76%), KNN (74%), XGBoost (78%).
-  - **AUC Score**: 0.78 (XGBoost).
+  - **Actual Accuracies**: Logistic Regression (81%), Decision Trees (83.2%), SVM (80.9%), Random Forest (82.8%), KNN (79.5%), XGBoost (84%).
+  - **AUC Score**: 0.87 (XGBoost).
 - **Key Predictors**: Curricular performance (PCA feature), age at enrollment, course, and financial status (e.g., tuition fees, scholarships).
 - **Risk Categories**: Low (<0.3), Medium (0.3–0.7), High (>0.7).
 - **EDA Insights**: Nursing has a low dropout rate (15.4%), while Biofuel Production Technologies (66.7%) and legally separated students (66.7%) show high dropout rates.
