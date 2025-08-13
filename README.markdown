@@ -1,4 +1,4 @@
-# Predicting and Analyzing Student Dropout Risks using Supervised ML Algorithms
+# Predicting Dropout Risk for Proactive Intervention 
 *An interactive machine learning dashboard to predict and analyze student dropout risk*
 
 ## 📝 Project Overview
